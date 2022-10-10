@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
+//using System.Web.Security;
 
 namespace Calculator
 {
@@ -12,7 +14,7 @@ namespace Calculator
             var a = 1;
             // BAD, Encrypt not specified
             string connectString =
-                "Server=1.2.3.4;Database=Anything;Integrated Security=true;";
+                "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
             var conn = new SqlConnection(builder.ConnectionString);            
             
@@ -24,5 +26,9 @@ namespace Calculator
             bool z = (a && b || (b && c)) && ((d && e) || (f && g)); // NOT OK
             return x && y && z; // OK
         }
+
+
+
+
     }
 }
