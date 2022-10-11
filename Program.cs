@@ -16,7 +16,8 @@ namespace Calculator
             string connectString =
                 "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
-            var conn = new SqlConnection(builder.ConnectionString);            
+            var conn = new SqlConnection(builder.ConnectionString);    
+            var AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY";
             
         }
         static bool foo(bool a, bool b, bool c, bool d, bool e, bool f, bool g)
