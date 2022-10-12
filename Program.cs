@@ -18,7 +18,7 @@ namespace Calculator
                 "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
             SqlConnection conn = new SqlConnection(builder.ConnectionString);   
-            var queryString = "Select * from Users Where UserName = " + uName;
+            var queryString = "Select * from Users Where UserName = '" + uName + "'";
             SqlCommand command = new SqlCommand(queryString, conn);
 
             conn.Open();
