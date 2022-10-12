@@ -1,0 +1,15 @@
+[2022-10-12 15:29:56] This is codeql database analyze --format=sarif-latest --threads=0 --output=/opt/results/issues.sarif-latest /opt/results/codeql-db csharp-security-extended.qls
+[2022-10-12 15:29:56] Log file was started late.
+[2022-10-12 15:29:56] [PROGRESS] database analyze> Running queries.
+[2022-10-12 15:29:56] Running plumbing command: codeql database run-queries --evaluator-log-level=5 --threads=0 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/root/qlconfig.yml --no-rerun -- /opt/results/codeql-db csharp-security-extended.qls
+[2022-10-12 15:29:56] Calling plumbing command: codeql resolve ram --format=json
+[2022-10-12 15:29:56] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx993M",
+                        "--off-heap-ram=993"
+                      ]
+[2022-10-12 15:29:56] Spawning plumbing command: execute queries -J-Xmx993M --off-heap-ram=993 --verbosity=progress --logdir=/opt/results/codeql-db/log --evaluator-log-level=5 --threads=0 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/root/qlconfig.yml --no-rerun --output=/opt/results/codeql-db/results -- /opt/results/codeql-db/db-csharp csharp-security-extended.qls
+[2022-10-12 15:30:00] [ERROR] Spawned process exited abnormally (code 2; tried to run: [/root/codeql-home/codeql/tools/linux64/java/bin/java, -Xmx993M, -Djava.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, -cp, /root/codeql-home/codeql/tools/codeql.jar, com.semmle.cli2.CodeQL, env_argv, execute, queries, -J-Xmx993M, _, _, _, _, _, _, _, _, --no-rerun, _, --, /opt/results/codeql-db/db-csharp, csharp-security-extended.qls])
+[2022-10-12 15:30:00] Plumbing command codeql execute queries terminated with status 2.
+[2022-10-12 15:30:00] Plumbing command codeql database run-queries completed with status 2.
+[2022-10-12 15:30:00] Exiting with code 2

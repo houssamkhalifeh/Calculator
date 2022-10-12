@@ -1,0 +1,743 @@
+[2022-10-12 15:29:58] This is codeql execute queries -J-Xmx993M --off-heap-ram=993 --verbosity=progress --logdir=/opt/results/codeql-db/log --evaluator-log-level=5 --threads=0 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/root/qlconfig.yml --no-rerun --output=/opt/results/codeql-db/results -- /opt/results/codeql-db/db-csharp csharp-security-extended.qls
+[2022-10-12 15:29:58] Calling plumbing command: codeql resolve queries --format=json -- csharp-security-extended.qls
+[2022-10-12 15:29:58] [DETAILS] resolve queries> Looking for a well-known suite "csharp-security-extended.qls".
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> csharp-security-extended.qls not found in /root/codeql-home/codeql/qlpacks/codeql/go-queries/0.1.2/codeql-suites.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> csharp-security-extended.qls not found in /root/codeql-home/codeql/qlpacks/codeql/python-queries/0.1.2/codeql-suites.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> csharp-security-extended.qls not found in /root/codeql-home/codeql/qlpacks/codeql/ruby-queries/0.1.2/codeql-suites.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> csharp-security-extended.qls not found in /root/codeql-home/codeql/qlpacks/codeql/javascript-queries/0.1.2/codeql-suites.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> csharp-security-extended.qls not found in /root/codeql-home/codeql/qlpacks/codeql/java-queries/0.1.2/codeql-suites.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> csharp-security-extended.qls not found in /root/codeql-home/codeql/qlpacks/codeql/cpp-queries/0.1.2/codeql-suites.
+[2022-10-12 15:29:58] [DETAILS] resolve queries> Expanding query suite /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/codeql-suites/csharp-security-extended.qls.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Suite description = Security-extended queries for C#
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Scanning for QL files at /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Not recursing into upgrades directory /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/.codeql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Found 297 QL files in /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Applying nested suite file /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/.codeql/libraries/codeql/suite-helpers/0.1.0/security-extended-selectors.yml from codeql/suite-helpers.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Suite description = Selectors for selecting the security-extended queries for a language
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/CallToGCCollect.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/CallToObsoleteMethod.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/ClassDoesNotImplementEquals.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/ClassImplementsICloneable.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/DisposeNotCalledOnException.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/FormatInvalid.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/InconsistentEqualsGetHashCode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/IncorrectCompareToSignature.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/IncorrectEqualsSignature.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/MissingDisposeCall.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/MissingDisposeMethod.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/NoDisposeCallOnLocalIDisposable.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/NonOverridingMethod.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/NullArgumentToEquals.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/UncheckedReturnValue.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/BlockCodeResponseWrite.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/ComplexInlineCode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/NonInternationalizedText.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/SplitControlStructure.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/AlertSuppression.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Architecture/Dependencies/MutualDependency.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Architecture/Refactoring Opportunities/FeatureEnvy.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Architecture/Refactoring Opportunities/InappropriateIntimacy.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/CallsUnmanagedCode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/CatchOfNullReferenceException.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Comments/CommentedOutCode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Comments/TodoComments.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Control-Flow/ConstantCondition.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/EmptyInterface.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/LocalScopeVariableShadowsMember.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/NoConstantsOnly.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/TooManyRefParameters.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/EmptyCatchBlock.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/ErroneousClassCompare.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Implementation Hiding/AbstractToConcreteCollection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Implementation Hiding/ExposeRepresentation.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Implementation Hiding/StaticArray.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/LeftoverDebugCode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Magic Constants/MagicConstantsNumbers.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Magic Constants/MagicConstantsString.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Magic Constants/MagicNumbersUseConstant.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Magic Constants/MagicStringsUseConstant.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/ConfusingMethodNames.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/ConfusingOverridesNames.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/ConstantNaming.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/ControlNamePrefixes.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/DefaultControlNames.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/FieldMasksSuperField.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/SameNameAsSuper.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/VariableNameTooShort.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/UnmanagedCodeCheck.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/UseOfHtmlInputHidden.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/UseOfSystemOutputStream.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/VirtualCallInConstructorOrDestructor.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/CSI/CompareIdenticalValues.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/CSI/NullAlways.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/CSI/NullMaybe.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Complexity/BlockWithTooManyStatements.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Complexity/ComplexCondition.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/FutileSyncOnField.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/LockOrder.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/LockThis.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/LockedWait.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/SynchSetUnsynchGet.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/UnsafeLazyInitialization.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/UnsynchronizedStaticAccess.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Configuration/EmptyPasswordInConfigurationFile.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Configuration/PasswordInConfigurationFile.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/DeadRefTypes.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/DeadStoreOfLocal.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/NonAssignedFields.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/UnusedField.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/UnusedMethod.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/CompilerError.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/CompilerMessage.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/DiagnosticExtractionErrors.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/DiagnosticNoExtractionErrors.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/ExtractorError.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/ExtractorMessage.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocExtraParam.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocExtraTypeParam.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissing.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingException.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingParam.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingReturn.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingSummary.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingTypeParam.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/UseOfFileUpload.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/ValueShadowing.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/ValueShadowingServerVariable.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/CastThisToTypeParameter.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/CatchOfGenericException.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/ChainedIs.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/DubiousDowncastOfThis.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/DubiousTypeTestOfThis.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/ForeachCapture.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/MissedReadonlyOpportunity.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/MissedTernaryOpportunity.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/MissedUsingOpportunity.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/NestedIf.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/RethrowException.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/SimplifyBoolExpr.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UnusedPropertyValue.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessCastToSelf.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessIsBeforeAs.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessNullCoalescingExpression.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessTypeTest.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessUpcast.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/BadCheckOdd.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Collections/ContainerLengthCmpOffByOne.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Collections/ContainerSizeCmpZero.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Collections/ReadOnlyContainer.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Collections/WriteOnlyContainer.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ConstantComparison.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/DangerousNonShortCircuitLogic.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Dynamic/BadDynamicCall.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/EqualityCheckOnFloats.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/EqualsArray.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/EqualsUsesAs.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/EqualsUsesIs.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/HashedButNoHash.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ImpossibleArrayCast.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/IncomparableEquals.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/InconsistentCompareTo.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/LeapYear/UnsafeYearConstruction.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/MishandlingJapaneseEra.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/NestedLoopsSameVariable.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ObjectComparison.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/PossibleLossOfPrecision.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/RandomUsedOnce.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/RecursiveEquals.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/RecursiveOperatorEquals.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ReferenceEqualsOnValueTypes.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/SelfAssignment.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Statements/EmptyBlock.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Statements/EmptyLockStatement.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Statements/UseBraces.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/StaticFieldWrittenByInstance.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/StringBuilderCharInit.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ThreadUnsafeICryptoTransform.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ThreadUnsafeICryptoTransformLambda.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/UncheckedCastInEquals.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/BadMultipleIteration.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/MissedAllOpportunity.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/MissedCastOpportunity.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/MissedOfTypeOpportunity.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/MissedSelectOpportunity.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/MissedWhereOpportunity.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/RedundantSelect.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CCyclomaticComplexity.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CLinesOfCode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CLinesOfComment.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CNumberOfParameters.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CNumberOfStatements.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CPercentageOfComments.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/StatementNestingDepth.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Dependencies/ExternalDependencies.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Dependencies/ExternalDependenciesSourceLinks.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FCommentRatio.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FCyclomaticComplexity.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FLines.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FLinesOfCode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FLinesOfComment.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FLinesOfCommentedCode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FNumberOfClasses.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FNumberOfInterfaces.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FNumberOfStructs.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FNumberOfTests.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FNumberOfUsingNamespaces.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FSelfContainedness.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TAfferentCoupling.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TEfferentCoupling.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TInheritanceDepth.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TLackOfCohesionCK.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TLackOfCohesionHS.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfCallables.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfEvents.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfFields.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfIndexers.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfNonConstFields.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfProperties.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfStatements.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TResponse.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TSizeOfAPI.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TSpecialisationIndex.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TUnmanagedCode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Summaries/FrameworkCoverage.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Summaries/LinesOfCode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/internal/ExtractorDiagnostics.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Performance/StringBuilderInLoop.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Performance/StringConcatenationInLoop.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Performance/UseTryGetValue.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-011/ASPNetDebug.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-016/ASPNetMaxRequestLength.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-016/ASPNetPagesValidateRequest.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-016/ASPNetRequestValidationMode.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-020/ExternalAPIsUsedWithUntrustedData.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-020/RuntimeChecksBypass.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-020/UntrustedDataToExternalAPI.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-022/TaintedPath.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-022/ZipSlip.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-078/CommandInjection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-078/StoredCommandInjection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-079/StoredXSS.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-079/XSS.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-089/SecondOrderSqlInjection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-089/SqlInjection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-090/LDAPInjection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-090/StoredLDAPInjection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-091/XMLInjection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-094/CodeInjection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-099/ResourceInjection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-112/MissingXMLValidation.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-114/AssemblyPathInjection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-117/LogForging.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-119/LocalUnvalidatedArithmetic.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-134/UncontrolledFormatString.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-201/ExposureInTransmittedData.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-209/ExceptionInformationExposure.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-248/MissingASPNETGlobalErrorHandler.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-312/CleartextStorage.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-321/HardcodedEncryptionKey.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-321/HardcodedSymmetricEncryptionKey.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-327/DontInstallRootCert.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-327/InsecureSQLConnection.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-352/MissingAntiForgeryTokenValidation.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-359/ExposureOfPrivateInformation.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-384/AbandonSession.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-451/MissingXFrameOptions.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-502/DeserializedDelegate.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-502/UnsafeDeserialization.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-502/UnsafeDeserializationUntrustedInput.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-548/ASPNetDirectoryListing.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-601/UrlRedirect.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-611/UntrustedDataInsecureXml.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-611/UseXmlSecureResolver.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-798/HardcodedCredentials.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Stubs/AllStubsFromSource.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Implicitly candidating /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/Serialization/XmlDeserializationWithDataSet.ql.
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Including by constraints kind=problem|path-problem; precision=high|very-high; tags contain=security.
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/CallToGCCollect.ql failed 'tags contain` constraint [efficiency, maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/CallToObsoleteMethod.ql failed 'tags contain` constraint [changeability, maintainability, external/cwe/cwe-477]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/ClassDoesNotImplementEquals.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/ClassImplementsICloneable.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/DisposeNotCalledOnException.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/FormatInvalid.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/InconsistentEqualsGetHashCode.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/IncorrectCompareToSignature.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/IncorrectEqualsSignature.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/MissingDisposeCall.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/MissingDisposeMethod.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/NoDisposeCallOnLocalIDisposable.ql failed 'tags contain` constraint [efficiency, maintainability, external/cwe/cwe-404, external/cwe/cwe-459, external/cwe/cwe-460]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/NonOverridingMethod.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/NullArgumentToEquals.ql failed 'tags contain` constraint [reliability, correctness]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/UncheckedReturnValue.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/BlockCodeResponseWrite.ql failed 'tags contain` constraint [maintainability, frameworks/asp.net]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/ComplexInlineCode.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/NonInternationalizedText.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/SplitControlStructure.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/AlertSuppression.ql failed the constraint of kind (was alert-suppression).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Architecture/Dependencies/MutualDependency.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Architecture/Refactoring Opportunities/FeatureEnvy.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Architecture/Refactoring Opportunities/InappropriateIntimacy.ql failed 'tags contain` constraint [maintainability, modularity]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/CallsUnmanagedCode.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/CatchOfNullReferenceException.ql failed 'tags contain` constraint [reliability, correctness, external/cwe/cwe-395]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Comments/CommentedOutCode.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Comments/TodoComments.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Control-Flow/ConstantCondition.ql failed 'tags contain` constraint [maintainability, readability, external/cwe/cwe-835]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/EmptyInterface.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/LocalScopeVariableShadowsMember.ql failed 'tags contain` constraint [maintainability, readability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/NoConstantsOnly.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/TooManyRefParameters.ql failed 'tags contain` constraint [testability, readability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/EmptyCatchBlock.ql failed 'tags contain` constraint [reliability, readability, exceptions, external/cwe/cwe-390, external/cwe/cwe-391]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/ErroneousClassCompare.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Implementation Hiding/AbstractToConcreteCollection.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Implementation Hiding/ExposeRepresentation.ql failed 'tags contain` constraint [reliability, external/cwe/cwe-485]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Implementation Hiding/StaticArray.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/LeftoverDebugCode.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Magic Constants/MagicConstantsNumbers.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Magic Constants/MagicConstantsString.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Magic Constants/MagicNumbersUseConstant.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Magic Constants/MagicStringsUseConstant.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/ConfusingMethodNames.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/ConfusingOverridesNames.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/ConstantNaming.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/ControlNamePrefixes.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/DefaultControlNames.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/FieldMasksSuperField.ql failed 'tags contain` constraint [reliability, readability, naming]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/SameNameAsSuper.ql failed 'tags contain` constraint [maintainability, readability, naming]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/VariableNameTooShort.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/UnmanagedCodeCheck.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/UseOfHtmlInputHidden.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/UseOfSystemOutputStream.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/VirtualCallInConstructorOrDestructor.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/CSI/CompareIdenticalValues.ql failed 'tags contain` constraint [reliability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/CSI/NullAlways.ql failed 'tags contain` constraint [reliability, correctness, exceptions, external/cwe/cwe-476]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/CSI/NullMaybe.ql failed 'tags contain` constraint [reliability, correctness, exceptions, external/cwe/cwe-476]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Complexity/BlockWithTooManyStatements.ql failed 'tags contain` constraint [maintainability, testability, complexity]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Complexity/ComplexCondition.ql failed 'tags contain` constraint [testability, readability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/FutileSyncOnField.ql failed 'tags contain` constraint [reliability, correctness, concurrency, external/cwe/cwe-662, external/cwe/cwe-366]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/LockOrder.ql failed 'tags contain` constraint [reliability, correctness, concurrency, external/cwe/cwe-662]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/LockThis.ql failed 'tags contain` constraint [reliability, maintainability, modularity, external/cwe/cwe-662]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/LockedWait.ql failed 'tags contain` constraint [reliability, correctness, concurrency, external/cwe/cwe-662, external/cwe/cwe-833]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/SynchSetUnsynchGet.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/UnsafeLazyInitialization.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/UnsynchronizedStaticAccess.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Configuration/EmptyPasswordInConfigurationFile.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Configuration/PasswordInConfigurationFile.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/DeadRefTypes.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/DeadStoreOfLocal.ql failed 'tags contain` constraint [maintainability, external/cwe/cwe-563]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/NonAssignedFields.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/UnusedField.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/UnusedMethod.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/CompilerError.ql failed 'tags contain` constraint [internal, non-attributable]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/CompilerMessage.ql failed 'tags contain` constraint [internal, non-attributable]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/DiagnosticExtractionErrors.ql failed the constraint of kind (was diagnostic).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/DiagnosticNoExtractionErrors.ql failed the constraint of kind (was diagnostic).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/ExtractorError.ql failed 'tags contain` constraint [internal, non-attributable]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/ExtractorMessage.ql failed 'tags contain` constraint [internal, non-attributable]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocExtraParam.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocExtraTypeParam.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissing.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingException.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingParam.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingReturn.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingSummary.ql failed 'tags contain` constraint [maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingTypeParam.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/UseOfFileUpload.ql.
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/ValueShadowing.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/ValueShadowingServerVariable.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/CastThisToTypeParameter.ql failed 'tags contain` constraint [reliability, maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/CatchOfGenericException.ql failed 'tags contain` constraint [reliability, maintainability, external/cwe/cwe-396]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/ChainedIs.ql failed 'tags contain` constraint [changeability, maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/DubiousDowncastOfThis.ql failed 'tags contain` constraint [testability, maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/DubiousTypeTestOfThis.ql failed 'tags contain` constraint [testability, maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/ForeachCapture.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/MissedReadonlyOpportunity.ql failed 'tags contain` constraint [maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/MissedTernaryOpportunity.ql failed 'tags contain` constraint [maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/MissedUsingOpportunity.ql failed 'tags contain` constraint [maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/NestedIf.ql failed 'tags contain` constraint [maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/RethrowException.ql failed 'tags contain` constraint [maintainability, language-features, exceptions]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/SimplifyBoolExpr.ql failed 'tags contain` constraint [readability, maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UnusedPropertyValue.ql failed 'tags contain` constraint [reliability, maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessCastToSelf.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessIsBeforeAs.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessNullCoalescingExpression.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessTypeTest.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessUpcast.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/BadCheckOdd.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Collections/ContainerLengthCmpOffByOne.ql failed 'tags contain` constraint [reliability, correctness, logic, external/cwe/cwe-193]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Collections/ContainerSizeCmpZero.ql failed 'tags contain` constraint [reliability, correctness, logic]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Collections/ReadOnlyContainer.ql failed 'tags contain` constraint [reliability, maintainability, useless-code, external/cwe/cwe-561]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Collections/WriteOnlyContainer.ql failed 'tags contain` constraint [maintainability, useless-code, external/cwe/cwe-561]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ConstantComparison.ql failed 'tags contain` constraint [correctness]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/DangerousNonShortCircuitLogic.ql failed 'tags contain` constraint [reliability, correctness, logic, external/cwe/cwe-480, external/cwe/cwe-691]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Dynamic/BadDynamicCall.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/EqualityCheckOnFloats.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/EqualsArray.ql failed 'tags contain` constraint [reliability, correctness]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/EqualsUsesAs.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/EqualsUsesIs.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/HashedButNoHash.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ImpossibleArrayCast.ql failed 'tags contain` constraint [reliability, correctness, logic]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/IncomparableEquals.ql failed 'tags contain` constraint [reliability, correctness]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/InconsistentCompareTo.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/LeapYear/UnsafeYearConstruction.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/MishandlingJapaneseEra.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/NestedLoopsSameVariable.ql failed 'tags contain` constraint [maintainability, correctness, logic]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ObjectComparison.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/PossibleLossOfPrecision.ql failed 'tags contain` constraint [reliability, correctness, external/cwe/cwe-190, external/cwe/cwe-192, external/cwe/cwe-197, external/cwe/cwe-681]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/RandomUsedOnce.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/RecursiveEquals.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/RecursiveOperatorEquals.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ReferenceEqualsOnValueTypes.ql failed 'tags contain` constraint [reliability, correctness, external/cwe/cwe-595]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/SelfAssignment.ql failed 'tags contain` constraint [reliability, correctness, logic]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Statements/EmptyBlock.ql failed 'tags contain` constraint [reliability, readability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Statements/EmptyLockStatement.ql failed 'tags contain` constraint [changeability, readability, concurrency, language-features, external/cwe/cwe-585]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Statements/UseBraces.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/StaticFieldWrittenByInstance.ql failed 'tags contain` constraint [reliability, maintainability, modularity]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/StringBuilderCharInit.ql failed 'tags contain` constraint [maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ThreadUnsafeICryptoTransform.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ThreadUnsafeICryptoTransformLambda.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/UncheckedCastInEquals.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/BadMultipleIteration.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/MissedAllOpportunity.ql failed 'tags contain` constraint [maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/MissedCastOpportunity.ql failed 'tags contain` constraint [maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/MissedOfTypeOpportunity.ql failed 'tags contain` constraint [maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/MissedSelectOpportunity.ql failed 'tags contain` constraint [maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/MissedWhereOpportunity.ql failed 'tags contain` constraint [maintainability, language-features]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Linq/RedundantSelect.ql failed 'tags contain` constraint [maintainability, language-features, external/cwe/cwe-561]
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CCyclomaticComplexity.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CLinesOfCode.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CLinesOfComment.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CNumberOfParameters.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CNumberOfStatements.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/CPercentageOfComments.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Callables/StatementNestingDepth.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Dependencies/ExternalDependencies.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Dependencies/ExternalDependenciesSourceLinks.ql failed the constraint of kind (was source-link).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FCommentRatio.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FCyclomaticComplexity.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FLines.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FLinesOfCode.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FLinesOfComment.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FLinesOfCommentedCode.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FNumberOfClasses.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FNumberOfInterfaces.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FNumberOfStructs.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FNumberOfTests.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FNumberOfUsingNamespaces.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FSelfContainedness.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TAfferentCoupling.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TEfferentCoupling.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TInheritanceDepth.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TLackOfCohesionCK.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TLackOfCohesionHS.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfCallables.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfEvents.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfFields.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfIndexers.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfNonConstFields.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfProperties.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfStatements.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TResponse.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TSizeOfAPI.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TSpecialisationIndex.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TUnmanagedCode.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Summaries/FrameworkCoverage.ql failed the constraint of kind (was metric).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Summaries/LinesOfCode.ql failed the constraint of kind (was metric).
+[2022-10-12 15:29:58] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/internal/ExtractorDiagnostics.ql failed the constraint of kind (was table).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Performance/StringBuilderInLoop.ql failed 'tags contain` constraint [efficiency]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Performance/StringConcatenationInLoop.ql failed 'tags contain` constraint [efficiency, maintainability]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Performance/UseTryGetValue.ql failed 'tags contain` constraint [maintainability, efficiency]
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-011/ASPNetDebug.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-016/ASPNetMaxRequestLength.ql failed the constraint of precision (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-016/ASPNetPagesValidateRequest.ql failed the constraint of precision (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-016/ASPNetRequestValidationMode.ql failed the constraint of precision (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-020/ExternalAPIsUsedWithUntrustedData.ql failed the constraint of kind (was table).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-020/RuntimeChecksBypass.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-020/UntrustedDataToExternalAPI.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-022/TaintedPath.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-022/ZipSlip.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-078/CommandInjection.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-078/StoredCommandInjection.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-079/StoredXSS.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-079/XSS.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-089/SecondOrderSqlInjection.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-089/SqlInjection.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-090/LDAPInjection.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-090/StoredLDAPInjection.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-091/XMLInjection.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-094/CodeInjection.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-099/ResourceInjection.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-112/MissingXMLValidation.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-114/AssemblyPathInjection.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-117/LogForging.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-119/LocalUnvalidatedArithmetic.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-134/UncontrolledFormatString.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-201/ExposureInTransmittedData.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-209/ExceptionInformationExposure.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-248/MissingASPNETGlobalErrorHandler.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-312/CleartextStorage.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-321/HardcodedEncryptionKey.ql failed the constraint of precision (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-321/HardcodedSymmetricEncryptionKey.ql failed the constraint of precision (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-327/DontInstallRootCert.ql failed the constraint of precision (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-327/InsecureSQLConnection.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-352/MissingAntiForgeryTokenValidation.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-359/ExposureOfPrivateInformation.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-384/AbandonSession.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-451/MissingXFrameOptions.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-502/DeserializedDelegate.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-502/UnsafeDeserialization.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-502/UnsafeDeserializationUntrustedInput.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-548/ASPNetDirectoryListing.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-601/UrlRedirect.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-611/UntrustedDataInsecureXml.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-611/UseXmlSecureResolver.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-614/RequireSSL.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-643/StoredXPathInjection.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-643/XPathInjection.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-730/ReDoS.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-730/RegexInjection.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-798/HardcodedConnectionString.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-798/HardcodedCredentials.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-807/ConditionalBypass.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-838/InappropriateEncoding.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CookieWithOverlyBroadDomain.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CookieWithOverlyBroadPath.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/Encryption using ECB.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/HeaderCheckingDisabled.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/InadequateRSAPadding.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/InsecureRandomness.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/InsufficientKeySize.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/PersistentCookie.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/WeakEncryption.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Stubs/AllStubsFromReference.ql failed the constraint of kind (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Stubs/AllStubsFromSource.ql failed the constraint of kind (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Stubs/MinimalStubsFromSource.ql failed the constraint of kind (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Telemetry/ExternalLibraryUsage.ql failed the constraint of kind (was metric).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Telemetry/SupportedExternalSinks.ql failed the constraint of kind (was metric).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Telemetry/SupportedExternalSources.ql failed the constraint of kind (was metric).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Telemetry/SupportedExternalTaint.ql failed the constraint of kind (was metric).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Telemetry/UnsupportedExternalAPIs.ql failed the constraint of kind (was metric).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Useless code/DefaultToString.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Useless code/FutileConditional.ql failed 'tags contain` constraint [reliability, readability]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Useless code/IntGetHashCode.ql failed 'tags contain` constraint [readability, useless-code]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Useless code/PointlessForwardingMethod.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Useless code/RedundantToStringCall.ql failed 'tags contain` constraint [maintainability, useless-code]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Useless code/UnusedLabel.ql failed 'tags contain` constraint [maintainability, useless-code]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/definitions.ql failed the constraint of kind (was definitions).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/CWE-099/TaintedWebClient.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/CWE-918/RequestForgery.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/CWE-1004/CookieWithoutHttpOnly.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/CWE-614/CookieWithoutSecure.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/CWE-759/HashWithoutSalt.ql failed the constraint of precision (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/Serialization/DefiningDatasetRelatedType.ql failed the constraint of precision (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/Serialization/DefiningPotentiallyUnsafeXmlSerializer.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/Serialization/UnsafeTypeUsedDataContractSerializer.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/Serialization/XmlDeserializationWithDataSet.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/backdoor/DangerousNativeFunctionCall.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/backdoor/PotentialTimeBomb.ql failed the constraint of precision (was Low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/backdoor/ProcessNameToHashTaintFlow.ql failed the constraint of precision (was medium).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/ir/IRConsistency.ql failed the constraint of kind (was table).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/ir/PrintIR.ql failed the constraint of kind (was graph).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/ir/implementation/raw/IRConsistency.ql failed the constraint of kind (was table).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/ir/implementation/raw/PrintIR.ql failed the constraint of kind (was graph).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/ir/implementation/unaliased_ssa/IRConsistency.ql failed the constraint of kind (was table).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/ir/implementation/unaliased_ssa/PrintIR.ql failed the constraint of kind (was graph).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/ir/implementation/unaliased_ssa/internal/SSAConsistency.ql failed the constraint of kind (was table).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/filters/ClassifyFiles.ql failed the constraint of kind (was file-classifier).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/localDefinitions.ql failed the constraint of kind (was definitions).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/localReferences.ql failed the constraint of kind (was definitions).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/meta/frameworks/Coverage.ql failed the constraint of kind (was table).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/printAst.ql failed the constraint of kind (was graph).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/utils/model-generator/CaptureDiscardedSummaryModels.ql failed the constraint of kind (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/utils/model-generator/CaptureSinkModels.ql failed the constraint of kind (was diagnostic).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/utils/model-generator/CaptureSourceModels.ql failed the constraint of kind (was diagnostic).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/utils/model-generator/CaptureSummaryModels.ql failed the constraint of kind (was diagnostic).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including by constraints kind=problem|path-problem; precision=medium; problem.severity=error|warning; tags contain=security.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/CallToGCCollect.ql failed the constraint of precision (was very-high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/CallToObsoleteMethod.ql failed the constraint of precision (was very-high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/ClassDoesNotImplementEquals.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/ClassImplementsICloneable.ql failed the constraint of precision (was very-high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/DisposeNotCalledOnException.ql failed 'tags contain` constraint [efficiency, maintainability, external/cwe/cwe-404, external/cwe/cwe-459, external/cwe/cwe-460]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/FormatInvalid.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/InconsistentEqualsGetHashCode.ql failed 'tags contain` constraint [reliability, maintainability, external/cwe/cwe-581]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/IncorrectCompareToSignature.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/IncorrectEqualsSignature.ql failed 'tags contain` constraint [reliability, maintainability]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/MissingDisposeCall.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/MissingDisposeMethod.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/NoDisposeCallOnLocalIDisposable.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/NonOverridingMethod.ql failed the constraint of problem.severity (was recommendation).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/NullArgumentToEquals.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/UncheckedReturnValue.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/BlockCodeResponseWrite.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/ComplexInlineCode.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/NonInternationalizedText.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/ASP/SplitControlStructure.ql failed the constraint of problem.severity (was recommendation).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/AlertSuppression.ql failed the constraint of kind (was alert-suppression).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Architecture/Dependencies/MutualDependency.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Architecture/Refactoring Opportunities/FeatureEnvy.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Architecture/Refactoring Opportunities/InappropriateIntimacy.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/CallsUnmanagedCode.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/CatchOfNullReferenceException.ql failed the constraint of precision (was very-high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Comments/CommentedOutCode.ql failed the constraint of problem.severity (was recommendation).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Comments/TodoComments.ql failed the constraint of problem.severity (was recommendation).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Control-Flow/ConstantCondition.ql failed the constraint of precision (was very-high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/EmptyInterface.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/LocalScopeVariableShadowsMember.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/NoConstantsOnly.ql failed the constraint of problem.severity (was recommendation).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Declarations/TooManyRefParameters.ql failed the constraint of precision (was very-high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/EmptyCatchBlock.ql failed the constraint of precision (was very-high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/ErroneousClassCompare.ql failed 'tags contain` constraint [reliability, correctness, external/cwe/cwe-486]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Implementation Hiding/AbstractToConcreteCollection.ql failed 'tags contain` constraint [reliability, maintainability, modularity, external/cwe/cwe-485]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Implementation Hiding/ExposeRepresentation.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Implementation Hiding/StaticArray.ql failed the constraint of problem.severity (was recommendation).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/LeftoverDebugCode.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Magic Constants/MagicConstantsNumbers.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/ConstantNaming.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Complexity/BlockWithTooManyStatements.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Dead Code/UnusedField.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Documentation/XmldocMissingTypeParam.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/ForeachCapture.ql failed the constraint of problem.severity (was recommendation).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/UselessCastToSelf.ql failed 'tags contain` constraint [maintainability, language-features, external/cwe/cwe-561]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Collections/ReadOnlyContainer.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/EqualsArray.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/NestedLoopsSameVariable.ql failed the constraint of precision (was high).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ThreadUnsafeICryptoTransform.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Files/FLinesOfCode.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Performance/StringConcatenationInLoop.ql failed the constraint of precision (was very-high).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-089/SecondOrderSqlInjection.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-838/InappropriateEncoding.ql failed the constraint of precision (was low).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/backdoor/ProcessNameToHashTaintFlow.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/API Abuse/CallToObsoleteMethod.ql failed the constraint of kind (was problem).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Comments/CommentedOutCode.ql failed the constraint of kind (was problem).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/Naming Conventions/SameNameAsSuper.ql failed the constraint of kind (was problem).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Concurrency/SynchSetUnsynchGet.ql failed the constraint of kind (was problem).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Language Abuse/ChainedIs.ql failed the constraint of kind (was problem).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/Dynamic/BadDynamicCall.ql failed the constraint of kind (was problem).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TInheritanceDepth.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Stubs/AllStubsFromSource.ql failed the constraint of kind (not present).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Including by constraints kind=metric; tags contain=summary.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Bad Practices/CatchOfNullReferenceException.ql failed the constraint of kind (was problem).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/ExtractorMessage.ql failed the constraint of kind (was problem).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/SelfAssignment.ql failed the constraint of kind (was problem).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/RefTypes/TNumberOfFields.ql failed the constraint of kind (was treemap).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Stubs/MinimalStubsFromSource.ql failed the constraint of kind (not present).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding by constraints deprecated=//.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/UseOfFileUpload.ql failed the constraint of deprecated (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-011/ASPNetDebug.ql failed the constraint of deprecated (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-248/MissingASPNETGlobalErrorHandler.ql failed the constraint of deprecated (not present).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/ValueShadowing.ql failed the constraint of deprecated (not present).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding by constraints query path=/^experimental\/.*/|Metrics/Summaries/FrameworkCoverage.ql|/Diagnostics/Internal/.*/.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/UseOfFileUpload.ql failed the constraint of query path (was Input Validation/UseOfFileUpload.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-011/ASPNetDebug.ql failed the constraint of query path (was Security Features/CWE-011/ASPNetDebug.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-022/TaintedPath.ql failed the constraint of query path (was Security Features/CWE-022/TaintedPath.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-022/ZipSlip.ql failed the constraint of query path (was Security Features/CWE-022/ZipSlip.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-078/CommandInjection.ql failed the constraint of query path (was Security Features/CWE-078/CommandInjection.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-089/SqlInjection.ql failed the constraint of query path (was Security Features/CWE-089/SqlInjection.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-091/XMLInjection.ql failed the constraint of query path (was Security Features/CWE-091/XMLInjection.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-094/CodeInjection.ql failed the constraint of query path (was Security Features/CWE-094/CodeInjection.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-099/ResourceInjection.ql failed the constraint of query path (was Security Features/CWE-099/ResourceInjection.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-114/AssemblyPathInjection.ql failed the constraint of query path (was Security Features/CWE-114/AssemblyPathInjection.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-117/LogForging.ql failed the constraint of query path (was Security Features/CWE-117/LogForging.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-119/LocalUnvalidatedArithmetic.ql failed the constraint of query path (was Security Features/CWE-119/LocalUnvalidatedArithmetic.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-201/ExposureInTransmittedData.ql failed the constraint of query path (was Security Features/CWE-201/ExposureInTransmittedData.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-248/MissingASPNETGlobalErrorHandler.ql failed the constraint of query path (was Security Features/CWE-248/MissingASPNETGlobalErrorHandler.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-352/MissingAntiForgeryTokenValidation.ql failed the constraint of query path (was Security Features/CWE-352/MissingAntiForgeryTokenValidation.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-384/AbandonSession.ql failed the constraint of query path (was Security Features/CWE-384/AbandonSession.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-502/DeserializedDelegate.ql failed the constraint of query path (was Security Features/CWE-502/DeserializedDelegate.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-611/UntrustedDataInsecureXml.ql failed the constraint of query path (was Security Features/CWE-611/UntrustedDataInsecureXml.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-643/XPathInjection.ql failed the constraint of query path (was Security Features/CWE-643/XPathInjection.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-730/ReDoS.ql failed the constraint of query path (was Security Features/CWE-730/ReDoS.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-730/RegexInjection.ql failed the constraint of query path (was Security Features/CWE-730/RegexInjection.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/InadequateRSAPadding.ql failed the constraint of query path (was Security Features/InadequateRSAPadding.ql).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/CWE-099/TaintedWebClient.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/CWE-918/RequestForgery.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/CWE-1004/CookieWithoutHttpOnly.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/CWE-614/CookieWithoutSecure.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Configuration/EmptyPasswordInConfigurationFile.ql failed the constraint of query path (was Configuration/EmptyPasswordInConfigurationFile.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Configuration/PasswordInConfigurationFile.ql failed the constraint of query path (was Configuration/PasswordInConfigurationFile.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-078/StoredCommandInjection.ql failed the constraint of query path (was Security Features/CWE-078/StoredCommandInjection.ql).
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-798/HardcodedConnectionString.ql failed the constraint of query path (was Security Features/CWE-798/HardcodedConnectionString.ql).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/Serialization/UnsafeTypeUsedDataContractSerializer.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/experimental/Security Features/backdoor/ProcessNameToHashTaintFlow.ql.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/utils/model-generator/CaptureSinkModels.ql failed the constraint of query path (was utils/model-generator/CaptureSinkModels.ql).
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Summaries/FrameworkCoverage.ql.
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding by constraints tags contain=model-generator.
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-209/ExceptionInformationExposure.ql failed 'tags contain` constraint [security, external/cwe/cwe-209, external/cwe/cwe-497]
+[2022-10-12 15:29:59] [SPAMMIER] resolve queries> /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/InsufficientKeySize.ql failed 'tags contain` constraint [security, external/cwe/cwe-326]
+[2022-10-12 15:29:59] [SPAMMY] resolve queries> Excluding /root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/utils/model-generator/CaptureSourceModels.ql.
+[2022-10-12 15:29:59] Plumbing command codeql resolve queries completed:
+                      [
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/UseOfFileUpload.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-011/ASPNetDebug.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-022/TaintedPath.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-022/ZipSlip.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-078/CommandInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-079/XSS.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-089/SqlInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-090/LDAPInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-091/XMLInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-094/CodeInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-099/ResourceInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-112/MissingXMLValidation.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-114/AssemblyPathInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-117/LogForging.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-119/LocalUnvalidatedArithmetic.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-134/UncontrolledFormatString.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-201/ExposureInTransmittedData.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-209/ExceptionInformationExposure.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-248/MissingASPNETGlobalErrorHandler.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-312/CleartextStorage.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-352/MissingAntiForgeryTokenValidation.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-359/ExposureOfPrivateInformation.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-384/AbandonSession.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-451/MissingXFrameOptions.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-502/DeserializedDelegate.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-502/UnsafeDeserializationUntrustedInput.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-548/ASPNetDirectoryListing.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-601/UrlRedirect.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-611/UntrustedDataInsecureXml.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-614/RequireSSL.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-643/XPathInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-730/ReDoS.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-730/RegexInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-807/ConditionalBypass.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CookieWithOverlyBroadDomain.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CookieWithOverlyBroadPath.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/Encryption using ECB.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/HeaderCheckingDisabled.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/InadequateRSAPadding.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/InsecureRandomness.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/InsufficientKeySize.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/PersistentCookie.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/WeakEncryption.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Configuration/EmptyPasswordInConfigurationFile.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Configuration/PasswordInConfigurationFile.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/ValueShadowing.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Input Validation/ValueShadowingServerVariable.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ThreadUnsafeICryptoTransform.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Likely Bugs/ThreadUnsafeICryptoTransformLambda.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-020/RuntimeChecksBypass.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-078/StoredCommandInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-079/StoredXSS.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-089/SecondOrderSqlInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-090/StoredLDAPInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-327/InsecureSQLConnection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-643/StoredXPathInjection.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-798/HardcodedConnectionString.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Security Features/CWE-798/HardcodedCredentials.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/DiagnosticExtractionErrors.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Diagnostics/DiagnosticNoExtractionErrors.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Metrics/Summaries/LinesOfCode.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Telemetry/ExternalLibraryUsage.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Telemetry/SupportedExternalSinks.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Telemetry/SupportedExternalSources.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Telemetry/SupportedExternalTaint.ql",
+                        "/root/codeql-home/codeql/qlpacks/codeql/csharp-queries/0.1.2/Telemetry/UnsupportedExternalAPIs.ql"
+                      ]
+[2022-10-12 15:29:59] Refusing fancy output: The terminal is not an xterm: 
+[2022-10-12 15:29:59] Exception caught at top level: /opt/results/codeql-db/db-csharp does not exist.
+                      com.semmle.cli2.ql.dataset.DatasetLayout.<init>(DatasetLayout.java:42)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.executeSubcommand(ExecuteQueriesCommand.java:230)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:500)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:205)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:214)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:98)

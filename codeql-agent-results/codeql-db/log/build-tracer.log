@@ -1,0 +1,106 @@
+[T 15:25:01 63] Reading configuration file /opt/results/codeql-db/working/tracing/compiler-tracing18292203764820941119.spec...
+[T 15:25:01 63] Compilers file as of 2022-10-12 15:25:01
+[T 15:25:01 63] Compiler pattern: **/csc.exe
+[T 15:25:01 63] Replace intercepted call: 0
+[T 15:25:01 63] Extractor: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Extraction.CSharp.Driver
+[T 15:25:01 63] Prepend[0] "--compiler"
+[T 15:25:01 63] Prepend[1] ""${compiler}""
+[T 15:25:01 63] Prepend[2] "--cil"
+[T 15:25:01 63] Compilers file as of 2022-10-12 15:25:01
+[T 15:25:01 63] Compiler pattern: **/mcs.exe
+[T 15:25:01 63] Replace intercepted call: 0
+[T 15:25:01 63] Extractor: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Extraction.CSharp.Driver
+[T 15:25:01 63] Prepend[0] "--compiler"
+[T 15:25:01 63] Prepend[1] ""${compiler}""
+[T 15:25:01 63] Prepend[2] "--cil"
+[T 15:25:01 63] Compilers file as of 2022-10-12 15:25:01
+[T 15:25:01 63] Compiler pattern: **/dotnet
+[T 15:25:01 63] Replace intercepted call: 0
+[T 15:25:01 63] Extractor: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Extraction.CSharp.Driver
+[T 15:25:01 63] Prepend[0] "--dotnetexec"
+[T 15:25:01 63] Prepend[1] "--cil"
+[T 15:25:01 63] Compilers file as of 2022-10-12 15:25:01
+[T 15:25:01 63] Compiler pattern: **/mono*
+[T 15:25:01 63] Replace intercepted call: 0
+[T 15:25:01 63] Extractor: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Extraction.CSharp.Driver
+[T 15:25:01 63] Prepend[0] "--dotnetexec"
+[T 15:25:01 63] Prepend[1] "--cil"
+[T 15:25:01 63] Compilers file as of 2022-10-12 15:25:01
+[T 15:25:01 63] Compiler pattern: **/xbuild
+[T 15:25:01 63] Replace intercepted call: 1
+[T 15:25:01 63] Extractor: ${compiler}
+[T 15:25:01 63] Append[0] "/p:UseSharedCompilation=false"
+[T 15:25:01 63] Compilers file as of 2022-10-12 15:25:01
+[T 15:25:01 63] Compiler pattern: **/msbuild
+[T 15:25:01 63] Replace intercepted call: 1
+[T 15:25:01 63] Extractor: ${compiler}
+[T 15:25:01 63] Append[0] "/p:UseSharedCompilation=false"
+[T 15:25:01 63] CodeQL CLI version 2.9.2
+[T 15:25:01 63] Initialising tags...
+[T 15:25:01 63] ID set to 000000000000003F_0000000000000001 (parent root)
+[T 15:25:01 63] Reading configuration file /opt/results/codeql-db/working/tracing/compiler-tracing18292203764820941119.spec...
+[T 15:25:01 63] Initialising tags...
+[T 15:25:01 63] ID set to 000000000000003F_0000000000000002 (parent root)
+[T 15:25:01 63] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 15:25:01 63] ==== Candidate to intercept: /root/codeql-home/codeql/tools/linux64/runner-linux (canonical: /root/codeql-home/codeql/tools/linux64/runner-linux) ====
+[T 15:25:01 63] Reading configuration file /opt/results/codeql-db/working/tracing/compiler-tracing18292203764820941119.spec...
+[T 15:25:01 63] Initialising tags...
+[T 15:25:01 63] ID set to 000000000000003F_0000000000000003 (parent 000000000000003F_0000000000000002)
+[T 15:25:01 63] ==== Candidate to intercept: /root/codeql-home/codeql/csharp/tools/autobuild.sh (canonical: /root/codeql-home/codeql/csharp/tools/autobuild.sh) ====
+[T 15:25:01 66] Reading configuration file /opt/results/codeql-db/working/tracing/compiler-tracing18292203764820941119.spec...
+[T 15:25:01 66] Initialising tags...
+[T 15:25:01 66] ID set to 0000000000000042_0000000000000001 (parent 000000000000003F_0000000000000003)
+[T 15:25:01 66] ==== Candidate to intercept: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Autobuild.CSharp (canonical: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Autobuild.CSharp) ====
+[T 15:29:51 66] Reading configuration file /opt/results/codeql-db/working/tracing/compiler-tracing9932681786532810294.spec...
+[T 15:29:51 66] Compilers file as of 2022-10-12 15:29:51
+[T 15:29:51 66] Compiler pattern: **/csc.exe
+[T 15:29:51 66] Replace intercepted call: 0
+[T 15:29:51 66] Extractor: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Extraction.CSharp.Driver
+[T 15:29:51 66] Prepend[0] "--compiler"
+[T 15:29:51 66] Prepend[1] ""${compiler}""
+[T 15:29:51 66] Prepend[2] "--cil"
+[T 15:29:51 66] Compilers file as of 2022-10-12 15:29:51
+[T 15:29:51 66] Compiler pattern: **/mcs.exe
+[T 15:29:51 66] Replace intercepted call: 0
+[T 15:29:51 66] Extractor: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Extraction.CSharp.Driver
+[T 15:29:51 66] Prepend[0] "--compiler"
+[T 15:29:51 66] Prepend[1] ""${compiler}""
+[T 15:29:51 66] Prepend[2] "--cil"
+[T 15:29:51 66] Compilers file as of 2022-10-12 15:29:51
+[T 15:29:51 66] Compiler pattern: **/dotnet
+[T 15:29:51 66] Replace intercepted call: 0
+[T 15:29:51 66] Extractor: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Extraction.CSharp.Driver
+[T 15:29:51 66] Prepend[0] "--dotnetexec"
+[T 15:29:51 66] Prepend[1] "--cil"
+[T 15:29:51 66] Compilers file as of 2022-10-12 15:29:51
+[T 15:29:51 66] Compiler pattern: **/mono*
+[T 15:29:51 66] Replace intercepted call: 0
+[T 15:29:51 66] Extractor: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Extraction.CSharp.Driver
+[T 15:29:51 66] Prepend[0] "--dotnetexec"
+[T 15:29:51 66] Prepend[1] "--cil"
+[T 15:29:51 66] Compilers file as of 2022-10-12 15:29:51
+[T 15:29:51 66] Compiler pattern: **/xbuild
+[T 15:29:51 66] Replace intercepted call: 1
+[T 15:29:51 66] Extractor: ${compiler}
+[T 15:29:51 66] Append[0] "/p:UseSharedCompilation=false"
+[T 15:29:51 66] Compilers file as of 2022-10-12 15:29:51
+[T 15:29:51 66] Compiler pattern: **/msbuild
+[T 15:29:51 66] Replace intercepted call: 1
+[T 15:29:51 66] Extractor: ${compiler}
+[T 15:29:51 66] Append[0] "/p:UseSharedCompilation=false"
+[T 15:29:51 66] CodeQL CLI version 2.9.2
+[T 15:29:51 66] Initialising tags...
+[T 15:29:51 66] ID set to 0000000000000042_0000000000000001 (parent root)
+[T 15:29:51 66] Reading configuration file /opt/results/codeql-db/working/tracing/compiler-tracing9932681786532810294.spec...
+[T 15:29:51 66] Initialising tags...
+[T 15:29:51 66] ID set to 0000000000000042_0000000000000002 (parent root)
+[T 15:29:51 66] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 15:29:51 66] ==== Candidate to intercept: /root/codeql-home/codeql/tools/linux64/runner-linux (canonical: /root/codeql-home/codeql/tools/linux64/runner-linux) ====
+[T 15:29:51 66] Reading configuration file /opt/results/codeql-db/working/tracing/compiler-tracing9932681786532810294.spec...
+[T 15:29:51 66] Initialising tags...
+[T 15:29:51 66] ID set to 0000000000000042_0000000000000003 (parent 0000000000000042_0000000000000002)
+[T 15:29:51 66] ==== Candidate to intercept: /root/codeql-home/codeql/csharp/tools/autobuild.sh (canonical: /root/codeql-home/codeql/csharp/tools/autobuild.sh) ====
+[T 15:29:51 69] Reading configuration file /opt/results/codeql-db/working/tracing/compiler-tracing9932681786532810294.spec...
+[T 15:29:51 69] Initialising tags...
+[T 15:29:51 69] ID set to 0000000000000045_0000000000000001 (parent 0000000000000042_0000000000000003)
+[T 15:29:51 69] ==== Candidate to intercept: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Autobuild.CSharp (canonical: /root/codeql-home/codeql/csharp/tools/linux64/Semmle.Autobuild.CSharp) ====

@@ -1,0 +1,146 @@
+[2022-10-12 15:25:00] This is codeql database create --threads=0 --language=csharp /opt/results/codeql-db -s /opt/src --overwrite
+[2022-10-12 15:25:00] Log file was started late.
+[2022-10-12 15:25:00] [PROGRESS] database create> Initializing database at /opt/results/codeql-db.
+[2022-10-12 15:25:00] Running plumbing command: codeql database init --overwrite --language=csharp --source-root=/opt/src --allow-missing-source-root=false --allow-already-existing -- /opt/results/codeql-db
+[2022-10-12 15:25:00] [PROGRESS] database init> Counting lines of code in /opt/src
+[2022-10-12 15:25:01] [PROGRESS] database init> Resolving extractor csharp.
+[2022-10-12 15:25:01] Calling plumbing command: codeql resolve languages --format=json
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from /root/codeql-home/codeql/.codeqlmanifest.json
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/ruby/codeql-extractor.yml.
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/html/codeql-extractor.yml.
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/go/codeql-extractor.yml.
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/cpp/codeql-extractor.yml.
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/java/codeql-extractor.yml.
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/properties/codeql-extractor.yml.
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/csv/codeql-extractor.yml.
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/xml/codeql-extractor.yml.
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/javascript/codeql-extractor.yml.
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/python/codeql-extractor.yml.
+[2022-10-12 15:25:01] [DETAILS] resolve languages> Parsing /root/codeql-home/codeql/csharp/codeql-extractor.yml.
+[2022-10-12 15:25:01] Plumbing command codeql resolve languages completed:
+                      {
+                        "extractors" : {
+                          "ruby" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/ruby"
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/html"
+                            }
+                          ],
+                          "go" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/go"
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/cpp"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis.\n",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/properties"
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/csv"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/xml"
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/javascript"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/python"
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "/root/codeql-home/codeql/csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction.",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+[2022-10-12 15:25:01] [DETAILS] database init> Found candidate extractor root for csharp: /root/codeql-home/codeql/csharp.
+[2022-10-12 15:25:01] [PROGRESS] database init> Successfully loaded extractor C# (csharp) from /root/codeql-home/codeql/csharp.
+[2022-10-12 15:25:01] [PROGRESS] database init> Created skeleton CodeQL database at /opt/results/codeql-db. This in-progress database is ready to be populated by an extractor.
+[2022-10-12 15:25:01] Plumbing command codeql database init completed.
+[2022-10-12 15:25:01] Using autobuild script /root/codeql-home/codeql/csharp/tools/autobuild.sh.
+[2022-10-12 15:25:01] [DETAILS] database create> Detected autobuild command for C#: /root/codeql-home/codeql/csharp/tools/autobuild.sh.
+[2022-10-12 15:25:01] [PROGRESS] database create> Running build command: [/root/codeql-home/codeql/csharp/tools/autobuild.sh]
+[2022-10-12 15:25:01] Running plumbing command: codeql database trace-command --threads=0 --working-dir=/opt/src --index-traceless-dbs --no-db-cluster -- /opt/results/codeql-db /root/codeql-home/codeql/csharp/tools/autobuild.sh
+[2022-10-12 15:25:01] Setting up tracing from specification at /root/codeql-home/codeql/csharp/tools/linux64/compiler-tracing.spec.
+[2022-10-12 15:25:01] [PROGRESS] database trace-command> Running command in /opt/src: [/root/codeql-home/codeql/csharp/tools/autobuild.sh]
+[2022-10-12 15:25:02] [build-stdout] CodeQL C# autobuilder
+[2022-10-12 15:25:02] [build-stdout] Working directory: /opt/src
+[2022-10-12 15:25:02] [build-stdout] Attempting to build using .NET Core
+[2022-10-12 15:25:02] [build-stdout] Running dotnet --info
+[2022-10-12 15:25:02] [build-stdout] Exit code 1: An error occurred trying to start process 'dotnet' with working directory '/opt/src'. No such file or directory
+[2022-10-12 15:25:02] [build-stdout] Attempting to build using MSBuild
+[2022-10-12 15:25:02] [build-stdout] Running nuget restore /opt/src/Calculator.csproj -DisableParallelProcessing
+[2022-10-12 15:25:02] [build-stdout] Exit code 1: An error occurred trying to start process 'nuget' with working directory '/opt/src'. No such file or directory
+[2022-10-12 15:25:02] [build-stdout] Attempting to download nuget.exe
+[2022-10-12 15:25:05] [build-stdout] Successfully downloaded /opt/src/.nuget/nuget.exe
+[2022-10-12 15:25:05] [build-stdout] Running mono /opt/src/.nuget/nuget.exe restore /opt/src/Calculator.csproj -DisableParallelProcessing
+[2022-10-12 15:25:05] [build-stdout] Exit code 1: An error occurred trying to start process 'mono' with working directory '/opt/src'. No such file or directory
+[2022-10-12 15:25:05] [build-stdout] Running msbuild /t:restore /opt/src/Calculator.csproj
+[2022-10-12 15:25:05] [build-stdout] Exit code 1: An error occurred trying to start process 'msbuild' with working directory '/opt/src'. No such file or directory
+[2022-10-12 15:25:05] [build-stdout] Running msbuild /opt/src/Calculator.csproj /p:UseSharedCompilation=false /t:rebuild /p:MvcBuildViews=true
+[2022-10-12 15:25:05] [build-stdout] Exit code 1: An error occurred trying to start process 'msbuild' with working directory '/opt/src'. No such file or directory
+[2022-10-12 15:25:05] [build-stdout] Attempting to locate build script
+[2022-10-12 15:25:06] [build-stderr] Error: Could not auto-detect a suitable build method
+[2022-10-12 15:25:06] [ERROR] Spawned process exited abnormally (code 1; tried to run: [/root/codeql-home/codeql/tools/linux64/preload_tracer, /root/codeql-home/codeql/csharp/tools/autobuild.sh])
+[2022-10-12 15:25:06] Exception caught at top level: Exit status 1 from command: [/root/codeql-home/codeql/csharp/tools/autobuild.sh]
+                      com.semmle.cli2.database.DatabaseProcessCommandCommon.executeSubcommand(DatabaseProcessCommandCommon.java:215)
+                      com.semmle.cli2.database.TraceCommandCommand.executeSubcommand(TraceCommandCommand.java:86)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:110)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:162)
+                      com.semmle.cli2.database.CreateCommand.executeSubcommand(CreateCommand.java:151)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:500)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:205)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:214)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:98)
