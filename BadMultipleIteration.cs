@@ -25,4 +25,11 @@ class BadMultipleIteration
             Console.WriteLine(i);
     }
 }
+class Bad
+{
+    void M()
+    {
+        GC.Collect();
+    }
+}
 }
