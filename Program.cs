@@ -9,6 +9,7 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            var uName = args[0];
             Console.WriteLine("Hello World!");
             Console.WriteLine("Bye World!");
             var a = 1;
@@ -16,7 +17,13 @@ namespace Calculator
             string connectString =
                 "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;";
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(connectString);
-            var conn = new SqlConnection(builder.ConnectionString);    
+            SqlConnection conn = new SqlConnection(builder.ConnectionString);   
+            var queryString = "Select * from Users Where UserName = " + uName;
+            SqlCommand command = new SqlCommand(queryString, conn);
+
+            conn.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            
             var AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY";
             
         }
